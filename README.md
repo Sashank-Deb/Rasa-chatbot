@@ -49,18 +49,19 @@ There's a lot more background information in this
 ---
 ### Rasa installation guide
 
-`Step 1`: So I'll write down how I figured this out. First, if you don't have the Anaconda package manager install it from the official website. (While installing click the checkbox to add Anaconda to your PATH environment variable.)
+`Step 1`: So I'll write down how I figured this out. First, if you don't have the Anaconda package manager install it from the [official website](https://www.anaconda.com/products/individual). (While installing click the checkbox to add Anaconda to your PATH environment variable.)
 
-`Step 2`: Now open up the anaconda prompt and go to the directory where you want to run rasa.
+`Step 2`: Now open up the anaconda prompt and go to the directory where you want to run `rasa`.
 
-`Step 3`: Then we can create a new conda environment by running conda create --name installingrasa python==3.8.5 to keep all of our dependencies together in a centralized place. Finally activate the environment by conda activate installingrasa
+`Step 3`: Then we can create a new conda environment by running `conda create --name installingrasa python==3.8.5` to keep all of our dependencies together in a centralized place. Finally activate the environment by `conda activate installingrasa`
 
 `Step 4`: Install UJSON and Tensorflow that will help us to work with rasa.
 ```bash
 conda install ujson
 conda install tensorflow
 ```
-`Step 5`: Ultimately we can install rasa. Here we are going to install it via pip rather than conda. (there is no conda version fr rasa at the moment I'm writing this)
-
+`Step 5`: Ultimately we can install `rasa`. Here we are going to install it via `pip` rather than `conda`. (There is no conda version for rasa at the moment I'm writing this)
+```bash
 pip install rasa
-`Step 6`: In order to run Tensorflow on windows, we need to download visual c++ separately. Find the executable from the official website. And now we can run rasa init without errors and initialize new bot.
+```
+`Step 6`: In order to run Tensorflow on windows, we need to download visual c++ separately. Find the executable from the [official website](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0). And now we can run `rasa init` without errors and initialize new bot.
