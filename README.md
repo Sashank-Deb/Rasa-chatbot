@@ -1,7 +1,9 @@
-# Rasa-chatbot
-Rasa is a context based leading conversational AI platform, I have used rasa to make a chatbot.I have used rasa webchat(A chat widget to deploy virtual assistants made with Rasa) as a react component.
-![image](https://user-images.githubusercontent.com/69194538/129959249-9b64b563-e07a-445a-b020-29f719735a4a.png)
 
+# Rasa-chatbot
+Rasa is a context based leading conversational AI platform, I have used rasa to make a chatbot.<br/>
+I have used rasa webchat (A chat widget to deploy virtual assistants made with Rasa).
+
+![image (2)](https://user-images.githubusercontent.com/69194538/129961759-298ccc87-91a5-4d22-8d8f-966e637f4b49.png)
 
 <h1 >Rasa Open Source</h1>
 
