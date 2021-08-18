@@ -1,8 +1,9 @@
 # Rasa-chatbot
-Rasa is a context based leading conversational AI platform, I have used rasa to make a chatbot
-<h1 align="center">Rasa Open Source</h1>
+Rasa is a context based leading conversational AI platform, I have used rasa to make a chatbot.I have used rasa webchat(A chat widget to deploy virtual assistants made with Rasa) as a react component.
+![image](https://user-images.githubusercontent.com/69194538/129959249-9b64b563-e07a-445a-b020-29f719735a4a.png)
 
 
+<h1 >Rasa Open Source</h1>
 
 <a href="https://grnh.se/05a908c02us" target="_blank"><img align="center" src="https://www.rasa.com/assets/img/github/hiring_banner.png" alt="An image with Sara, the Rasa mascot, standing next to a roadmap with future Rasa milestones: identifying unsuccessful conversations at scale, continuous model evaluation, controllable NLG and breaking free from intents. Are you excited about these milestones? Help us make these ideas become reality - we're hiring!" title="We're hiring! Learn more"></a>
 
@@ -65,3 +66,22 @@ conda install tensorflow
 pip install rasa
 ```
 `Step 6`: In order to run Tensorflow on windows, we need to download visual c++ separately. Find the executable from the [official website](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0). And now we can run `rasa init` without errors and initialize new bot.
+
+---
+### Rasa Cheat Sheet
+
+Command	<br/><br/>
+-`rasa init`	              : Creates a new project with example training data, actions, and config files.<br/>
+-`rasa train`	            : Trains a model using your NLU data and stories, saves trained model in ./models.<br/>
+-`rasa interactive`	      : Starts an interactive learning session to create new training data by chatting to your assistant.<br/>
+-`rasa shell`	            : Loads your trained model and lets you talk to your assistant on the command line.<br/>
+-`rasa run`	              : Starts a server with your trained model.<br/>
+-`rasa run actions`	      : Starts an action server using the Rasa SDK.<br/>
+-`rasa visualize`	        : Generates a visual representation of your stories.<br/>
+-`rasa test`	              : Tests a trained Rasa model on any files starting with test_.<br/>
+-`rasa data split nlu`	    : Performs a 80/20 split of your NLU training data.<br/>
+-`rasa data convert`	      : Converts training data between different formats.<br/>
+-`rasa data validate`	    : Checks the domain, NLU and conversation data for inconsistencies.<br/>
+-`rasa export`	            : Exports conversations from a tracker store to an event broker.<br/>
+-`rasa x`	                : Launches Rasa X in local mode.<br/>
+-`rasa -h`	                : Shows all available commands.<br/>
