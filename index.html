@@ -1,0 +1,49 @@
+<html>
+    <body>
+        <style>
+            .rw-conversation-container .rw-header{background-color: #002507;}
+            .rw-conversation-container .rw-messages-container .rw-message .rw-client{background-color: hsl(106, 100%, 13%);}
+            .rw-conversation-container .rw-messages-container .rw-message .rw-response{background-color: hsl(106, 100%, 88%);}
+            .rw-launcher{background-color: hsl(120, 100%, 9%);}
+            .rw-conversation-container .rw-messages-container::-webkit-scrollbar{display: none;}
+        </style>
+        <script>(function () {
+            let e = document.createElement("script"),
+              t = document.head || document.getElementsByTagName("head")[0];
+            (e.src =
+              "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"),
+              // Replace 1.x.x with the version that you want
+              (e.async = !0),
+              (e.onload = () => {
+                window.WebChat.default(
+                  {
+                    initPayload: '/greet',
+                    interval: 1000,
+                    customData: { language: "en" },
+                    socketUrl: "http://localhost:5005",
+                    title: 'Welcome',
+                    subtitle: 'Say hi to get started',
+                    // profileAvatar: "./assets/svg/robot.svg",
+                    // openLauncherImage: "./assets/svg/comment.svg",
+                    // closeImage: "./assets/svg/down.svg",
+                    showMessageDate: true,
+                    inputTextFieldHint: "What's in your mind ?...",
+                    // add other props here
+                    params: {
+                        images: {
+                            dims: {
+                                width: 300,
+                                height: 200
+                                  }
+                                },
+                                storage: "session"
+                            }
+                  },
+                  null,
+                );
+              }),
+              t.insertBefore(e, t.firstChild);
+          })();
+          </script>
+    </body>
+</html>
